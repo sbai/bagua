@@ -14,13 +14,13 @@ module Bagua
 
       it "works for all King Wen sequence examples" do
         @examples_wen.each do |row|
-          Hex.from_bytes(row[0..-2],:wen).should == row[-1]
+          expect(Hex.from_bytes(row[0..-2],:wen)).to eq row[-1]
         end
       end
 
       it "works for all binary sequence examples" do
         @examples_bin.each do |row|
-          Hex.from_bytes(row[0..-2],:binary).should == row[-1]
+          expect(Hex.from_bytes(row[0..-2],:binary)).to eq row[-1]
         end
       end
     end

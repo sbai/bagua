@@ -18,9 +18,9 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ['lib']
 
-  spec.add_development_dependency 'bundler', '~> 1.3'
-  spec.add_development_dependency 'rake', '~> 10.0.3'
-  spec.add_development_dependency 'yard', '~> 0.8.3'
-  spec.add_development_dependency 'redcarpet', '~> 2.2.2'
-  spec.add_development_dependency 'rspec', '~> 2.13.0'
+  spec.add_development_dependency 'bundler', '~> 1.16'
+  spec.add_development_dependency 'rake', '~> 12.0.0'
+  spec.add_development_dependency 'yard', '~> 0.9.12'
+  spec.add_development_dependency 'redcarpet', '~> 3.4.0'
+  spec.add_development_dependency 'rspec', '~> 3.7.0'
 end

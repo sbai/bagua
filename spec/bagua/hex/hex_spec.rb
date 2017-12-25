@@ -12,19 +12,19 @@ module Bagua
 
     it "decode(encode(str)) should equal str" do
       @examples.each do |row|
-        Hex.decode(Hex.encode(row[0])).should == row[0]
+        expect(Hex.decode(Hex.encode(row[0]))).to eq row[0]
       end
     end
 
     it "decode(encode(str,:wen),:wen) should equal str" do
       @examples.each do |row|
-        Hex.decode(Hex.encode(row[0],:wen),:wen).should == row[0]
+        expect(Hex.decode(Hex.encode(row[0],:wen),:wen)).to eq row[0]
       end
     end
 
     it "decode(encode(str,:binary),:binary) should equal str" do
       @examples.each do |row|
-        Hex.decode(Hex.encode(row[0],:binary),:binary).should == row[0]
+        expect(Hex.decode(Hex.encode(row[0],:binary),:binary)).to eq row[0]
       end
     end
   end

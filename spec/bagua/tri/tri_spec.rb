@@ -12,7 +12,7 @@ module Bagua
 
     it "decode(encode(str)) should equal str" do
       @examples.each do |row|
-        Tri.decode(Tri.encode(row[0])).should == row[0]
+        expect(Tri.decode(Tri.encode(row[0]))).to eq row[0]
       end
     end
   end

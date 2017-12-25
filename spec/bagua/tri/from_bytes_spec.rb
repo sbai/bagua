@@ -13,7 +13,7 @@ module Bagua
 
       it "works for all example valid inputs" do
         @examples.each do |row|
-          Tri.from_bytes(row[0..-2]).should == row[-1]
+          expect(Tri.from_bytes(row[0..-2])).to eq row[-1]
         end
       end
     end

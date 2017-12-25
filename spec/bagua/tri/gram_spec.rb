@@ -13,7 +13,7 @@ module Bagua
 
       it "works for all example valid inputs" do
         @examples.each do |row|
-          Tri.gram(row[0]).should == row[1]
+          expect(Tri.gram(row[0])).to eq row[1]
         end
       end
     end
